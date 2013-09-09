@@ -1,0 +1,1 @@
+from ipythonconsole import INinjaConsole

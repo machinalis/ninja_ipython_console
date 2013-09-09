@@ -1,0 +1,7 @@
+{
+  "url": "http://www.machinalis.com", 
+  "version": "0.1", 
+  "class": "INinjaConsole", 
+  "module": "ipythonconsole", 
+  "authors": "Horacio Duran <hduran@machinalis.com>"
+}

@@ -28,8 +28,14 @@ try:
 except ImportError:
     from IPython.kernel.zmq.kernelapp import IPKernelApp
 from IPython.lib.kernel import find_connection_file
-from IPython.frontend.qt.kernelmanager import QtKernelManager
-from IPython.frontend.qt.console.rich_ipython_widget import RichIPythonWidget
+try:
+    from IPython.frontend.qt.kernelmanager import QtKernelManager
+except ImportError:
+    from IPython.qt.manager import QtKernelManager
+try:
+    from IPython.frontend.qt.console.rich_ipython_widget import RichIPythonWidget
+except ImportError:
+    from IPython.qt.console.rich_ipython_widget import RichIPythonWidget
 from IPython.utils.traitlets import TraitError
 from PyQt4 import QtCore
 from PyQt4.QtCore import SIGNAL
